@@ -7,9 +7,10 @@
     ceci est ma page d'acceuil
   </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="witdh=device-width, initial-sclae=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <link href="SASS/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
@@ -19,20 +20,88 @@
 </head>
 
 <body>
+
   <div class="container">
     <header class="row">
       <h1 class="col-4">Ma premiere page</h1>
       <nav class="col-8">
         <a href="/accueil"></a> | <a href="autres.html">autre page</a>
       </nav>
+
     </header>
-    <section class"row">
+    <p class="monalert">test</p>
+    <p class="exemple1">test</p>
+    <p class="exemple2">test</p>
+    <p class="exemple3">test</p>
+    <p class="exemple4">test</p>
+    <section class="row">
       <div class="col-6"> ma premiere colonne</div>
       <div class="col-6"> ma deuxieme colonne</div>
     </section>
+    <a id="show" class="btn btn-out line danger">Réaparition</a>
+    <section id="effets" class="row">
+      <div class="col-1"></div>
+    </section>
+    <section id="tests" class="row">
+      <div id="box1" class="col-1"></div>
+      <div id="box2" class="col-1"></div>
+      <div id="box3" class="col-1"></div>
+    </section>
+    <section id="animate">
+      <div class="col-2">
+        test
+      </div>
+    </section>
+    <section id="ecureuil" class="row">
+      <button id="no-alerte" class="col-1">NON</button>
+      <button id="plus" class="col-1 btn btn-outline-danger">ajouter</button>
+      <button id="moins" class="col-1 btn btn-outline-danger">enlever</button>
+      <ul class="col-12">
+        <li>ma premiere ligne</li>
+        <li><a href="#ecureuil">ligne 2</a></li>
+        <li>ligne 3</li>
+        <li><a href="#ecureuil">ligne 4</a></li>
+        <li>ligne 5 </li>
+        <li>ligne 6 </li>
+      </ul>
+    </section>
+    <section class="row" id="toggle">
+      <button id="theToggle" class="col-1">click me</button>
+      <button id="plusGrand" class="col-2 btn btn-outline-danger taille">plus grand</button>
+      <button id="plusPetit" class="col-2 btn btn-outline-danger taille">plus petit</button>
+      <div id="maBoite" class="col-12">LA boite</div>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+      <p class="col-12">Lorem ipsum dolor sit amet consectet</p>
+
+    </section>
+    <section id="photos" class="row">
+      <nav class="col-2">
+        <ul>
+          <li> <img src="images de cahtons/bisous petit.jpg" alt="vignette 1"></li>
+          <li> <img src="images de cahtons/fleur petit.jpg" alt="vignette 2"></li>
+          <li> <img src="images de cahtons/pont petit.jpg" alt="vignette 3"></li>
+          <li> <img src="images de cahtons/route de plage petit.jpg" alt="vignette 4"></li>
+          <li> <img src="images de cahtons/route maison petit.jpg" alt="vignette 5"></li>
+        </ul>
+      </nav>
+      <div class="col-10">
+        <img src="images de cahtons/bisous GR.jpg" alt="bisous GR.jpg">
+        <img src="images de cahtons/fleur GR.jpg" alt="bisous GR.jpg">
+        <img src="images de cahtons/pont GR.jpg" alt="bisous GR.jpg">
+        <img src="images de cahtons/route de plage GR.jpg" alt="bisous GR.jpg">
+        <img src="images de cahtons/route maison GR.jpg" alt="bisous GR.jpg">
+      </div>
+
+    </section>
+
 
   </div>
+  <script src="monjs.js"></script>
 </body>
 
 
-</html
+</html>

@@ -1,0 +1,104 @@
+$couleur_principale:red;
+$couleur_secondaire:blue;
+$cp:$couleur_principale;
+$cs:$couleur_secondaire;
+body {
+  h1{
+    color: $cp;
+    &:hover{
+      color: $cs;
+    }
+  }
+
+}
+
+.monalert{
+  background-color: rgba($cp,.5);
+}
+%message{
+  padding: .5em;
+  border: 1px solid rgba(0,0,0,.1);
+  font-weight: bold;
+
+}
+@mixin size($width,$height:$width){
+  width :$width;
+  height:$height;
+
+}
+@mixin br($valeur1:5px,$valeur2:$valeur1,$valeur3:$valeur1,$valeur4: $valeur1){
+border-radius: $valeur1 $valeur2 $valeur3 $valeur4;
+
+}
+[class^=exemple]{
+  background: green;
+  padding:20px;
+  margin: 0 10px;
+  display: inline-block;
+}
+.exemple1{
+  @include br;
+}
+.exemple2{
+  @include br(10px);
+
+}
+.exemple3 {
+  @include br(10px,55px,28px,4px);
+
+}
+
+.message{
+
+  &-error{
+    @include size(200px);
+      color :red;
+      @extend %message;
+
+  }
+  &-valid{
+    @include size(150px,180px);
+    color:green;
+    @extend %message;
+  }
+  &-warning{
+    @include size(220px);
+    color: orange;
+    @extend %message;
+  }
+  &-info{
+    @include size(120px,50px);
+    color: blue;
+    @extend %message;
+  }
+}
+//annuaire
+
+.annuaire {
+  nav,select{
+    margin:10px 0;
+  }
+  #liste{
+    margin: 60px 0 0;
+    .card-columns{
+      column-count:5;
+    }
+  }
+  .nav-item{
+    cursor:pointer;
+    padding: 7px;
+    margin: 0 2px;
+    &:hover{
+      color: red;
+    }
+  }
+  .nolist{
+    border: 1px solid red;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+  }
+}
+
+
+

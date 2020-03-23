@@ -1,3 +1,54 @@
 body{
-  background-color: gold;
+  background-color: grey;
+}
+#effets div{
+  background: red;
+  margin : 2px;
+  height : 100px;
+
+}
+#show{
+  border: 2px solid;
+  padding: 10px;
+  margin: 9px;
+
+}
+#tests div,#animate div, #maBoite{
+  background: red;
+  height: 100px;
+  margin: 2px;
+}
+.alerte{
+  color:red;
+
+}
+.highlight{
+  background-color:yellow;
+}
+.bordure{
+  border:5px solid black;
+}
+.vert{
+
+  background-color:green !important;
+}
+#toogle p{
+  padding:10px;
+  margin:0px;
+}
+#photos div img{
+  display:none;
+}
+#photos nav ul{
+  list-style:none;
+  padding:0px;
+}
+#photos nav li{
+margin-bottom: 10px;
+
+}
+#photos nav li img{
+  max-width: 100%;
+  height:auto;
+  filter:blur(2px);
 }

@@ -1,0 +1,111 @@
+$mobile-max: 767px;
+$tablet: 768px;
+$tablet-max: 991px;
+$desktop: 992px;
+body{
+    background-color: red;
+}
+.tablet{
+    display: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.box{
+    display: flex;
+    flex-wrap:wrap;
+    article{
+        width: 100%;
+        background: white;
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+}
+
+#maboiteBootSrap{
+    body{
+        background-color: white;
+    }
+    .tablet{
+        display: block;
+    }
+}
+#maboite{
+    display: grid;
+    grid-template-rows: (3,1fr);
+    nav{
+        grid-row-start: 3;
+    }
+}
+@media (min-width: $tablet) AND (max-width: $tablet-max){
+    body{
+        background-color: yellow;
+    }
+    .tablet{
+        display: block;
+    }
+    .box{
+        article{
+            width: calc(50% - 10px);
+        }
+    }
+    #maboite{
+        grid-template-columns: auto auto 200px;
+        grid-template-rows: (2, 1fr);
+        &>*{
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+        nav{
+            grid-row: span 3;
+            grid-column: span 1;
+            grid-column-start: 3;
+        }
+    }
+}
+//https://css-tricks.com/snippets/css/complete-guide-grid/
+#maboite{
+    background-color: white;
+    &>*{
+        background-color: #ccc;
+        margin: 5px;
+        padding: 5px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+    }
+}
+@media (min-width: $desktop){
+    body{
+        background-color: blue;
+    }
+    .box{
+        article{
+            width: calc(33.33333% - 10px);
+        }
+    }
+    #maboite{
+        grid-template-columns: 300px auto 200px;
+        grid-template-rows: repeat(1, 1fr);
+        nav{
+            grid-column-start: 3;
+            grid-row-start: 1;
+        }
+        figure{
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        article{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+    }
+}

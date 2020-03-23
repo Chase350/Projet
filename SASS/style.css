@@ -1,0 +1,64 @@
+body h1 {
+  color: red; }
+  body h1:hover {
+    color: blue; }
+
+.monalert {
+  background-color: rgba(255, 0, 0, 0.5); }
+
+.message-error, .message-valid, .message-warning, .message-info {
+  padding: .5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold; }
+
+[class^=exemple] {
+  background: green;
+  padding: 20px;
+  margin: 0 10px;
+  display: inline-block; }
+
+.exemple1 {
+  border-radius: 5px 5px 5px 5px; }
+
+.exemple2 {
+  border-radius: 10px 10px 10px 10px; }
+
+.exemple3 {
+  border-radius: 10px 55px 28px 4px; }
+
+.message-error {
+  width: 200px;
+  height: 200px;
+  color: red; }
+.message-valid {
+  width: 150px;
+  height: 180px;
+  color: green; }
+.message-warning {
+  width: 220px;
+  height: 220px;
+  color: orange; }
+.message-info {
+  width: 120px;
+  height: 50px;
+  color: blue; }
+
+.annuaire nav, .annuaire select {
+  margin: 10px 0; }
+.annuaire #liste {
+  margin: 60px 0 0; }
+  .annuaire #liste .card-columns {
+    column-count: 5; }
+.annuaire .nav-item {
+  cursor: pointer;
+  padding: 7px;
+  margin: 0 2px; }
+  .annuaire .nav-item:hover {
+    color: red; }
+.annuaire .nolist {
+  border: 1px solid red;
+  padding: 10px;
+  width: 100%;
+  display: flex; }
+
+/*# sourceMappingURL=style.css.map */
